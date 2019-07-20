@@ -1,0 +1,66 @@
+Hi,
+
+Below is the summary of the assignment I have worked on:
+
+Please look at the attached Jupyter notebook for more insights.
+ML techniques used:
+1. RandomForestClassifier
+2. Logistic Regression
+3. KNeighborsClassifier
+4. GaussianNB
+5. DecisionTreeClassifier
+
+Imputation techniques:
+1. SimpleImputer
+2. fillna
+
+1)Justification for select variables
+The dataset is balanced so I used below techniques, otherwise for imbalanced dataset
+I would have used Knn algorithm to select features.
+Techniques used for feature selection:
+	- SelectKBest
+	- RFE
+	- RFECV
+	- RandomForestClassifier
+	- PCA
+	- Pearson Correlation
+
+Also, used pairplot and correlation heatmap to see which features are highly correlated in-between and with class variable.
+Since feature C15 is affected with outliers. We can remove outliers using IQR, values between lower quartile range(25) and upper quaritle range(75).
+So C15 is insignificant feature. Below are the accuracy results.
+
+Before removing C15
+Train accuracy:  0.9917184265010351
+
+After removing C15
+Train accuracy:  0.989648033126294
+
+Accuracy is not much imporoved even after removing C15.
+Recursive feature selection also didn't improved much the accuracy since the features contributes in the target class. They have correlation among them.
+Also, tried OneHot encoding on categorical features and count of categorical feature reached to 31 but it didn't improved model accuracy.
+	
+2) Justification for your chosen accuracy measure
+Since the dataset is balanced, below are the metrics used for accuracy:
+1. Accuracy
+2. F1 Score
+3. AUC curve
+
+3) Justification for your algorithm(s)
+Used RandomForestClassifier because:
+1. The dataset has categorical features and RandomForestClassifier works best in this scenario.
+2. When the number of feature are more, RandomForestClassifier uses entropy and information gain to decide which is best attribute to split on.
+It automatically selects best features.
+3. RF works well when the dataset is a mix of numerical and cat features.
+4. Since the dataset is small, the algorithms more suffers with overfitting, so RF is best in this case.
+
+4) Visualization are desired
+- Plot Countplot on Class variable Hired
+- Pairplot on numerical and categorical features
+- AUC curve used
+- Heatmap to plot
+
+I would have explored the data more and may have worked more on feature selection, but due to time constraint I could only do this.
+Anyways it was a good assignment.
+
+Thank you :)
+Surinder Kumar
