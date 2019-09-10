@@ -1,0 +1,29 @@
+Hi
+
+Approach and understanding:
+1. Analysed the dataset given and understands each of the feature using the dictionary file explaining each feature.
+2. Removed the feature columns in which more than 80% of the rows are empty.
+3. Feature Selection: Find out the feature which contribues/ have relship. with Target variable by looking manually at the columns and finding correlation and plotting heatmap. It helped in finding positive and negative correlation between the features.
+4. Kept only two classes of Target variable "Fully Paid" and "Charged Off", removed other category since we have enough data to analyse.
+5. Imputed the feature values some with zeros and some with mean.
+6. One Hot encoded the categorical features to enhace the model predictive power.
+7. Scaled the numeric data.
+8. ROC curve is used to check the model performance on Unbalanced and balanced dataset.
+9. Plotted cross-validation scores, ROC curves and confusion matrix.
+10. Find out the optimal threshold value for ROC curve where model performs good.
+11. Grid Search is used with Random Forest Classifier to find the best params where RF works well.
+12. Various plots and visualizations are used to better understand the data.
+
+Model used:
+1. LinearDiscriminantAnalysis
+2. MultinomialNB
+3. RandomForestClassifier
+4. LogisticRegression
+Used cross-validation to check if model built is generalized on all dataset or not.
+In Loan approval applications, we can't rely on the default threhold 0.5 for LogisticRegression so we can change it the way we can find more defaults and more loan applications approval.
+So, ROC curve cutt off is determined.
+
+I could refine the features more but couldn't due to time constraint.
+
+Thanks,
+Surinder
