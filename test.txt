@@ -1,0 +1,907 @@
+https://curiousjatin.wordpress.com/2017/03/31/practical-machine-learning-implementation-predicting-survey-response-detractors/
+
+https://github.com/justmarkham/scikit-learn-videos
+
+Recommendation system
+https://www.kaggle.com/rounakbanik/movie-recommender-systems
+https://www.datacamp.com/community/tutorials/recommender-systems-python
+
+Saving and Loading the data(after clean up)
+
+https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-coding-edd8f1cf8f2d
+
+1)Stemming usually refers to a crude heuristic process that chops off the ends of words in the hope of achieving this goal correctly most of the time, and often includes the removal of derivational affixes.
+
+Lemmatization usually refers to doing things properly with the use of a vocabulary and morphological analysis of words, normally aiming to remove inflectional endings only and to return the base or dictionary form of a word, which is known as the lemma.
+
+2)Stemmer operates on a single word without knowledge of the context, and therefore cannot discriminate between words which have different meanings depending on part of speech. However, stemmers are typically easier to implement and run faster, and the reduced accuracy may not matter for some applications.
+
+Lemmatisation can in principle select the appropriate lemma depending on the context.
+
+3)Lemmatization deals only with inflectional variance, whereas stemming may also deal with derivational variance
+
+4) Stemmers use an algorithmic approach of removing prefixes and suffixes. The result might not be an actual dictionary word. Lemmatizers use a corpus. The result is always a dictionary word.
+Lemmatizers need extra info about the part of speech they are processing.
+Stemmers are faster than lemmatizers. So if speed is an issue use stemmer.
+
+When to use:
+As for when you would use one or the other, it's a matter of how much your application depends on getting the meaning of a word in context correct. If you're doing machine translation, you probably want lemmatization to avoid mistranslating a word. If you're doing information retrieval over a billion documents with 99% of your queries ranging from 1-3 words, you can settle for stemming.
+
+https://www.youtube.com/watch?v=HpWpIY2fhIo
+
+basics of statistics jarkko isotalo
+
+Standard Deviation and Variance
+https://www.youtube.com/watch?v=LL4YVilhCkw
+
+Mean Mode Median
+https://www.youtube.com/watch?v=tiaVXVehRnE
+
+Interquartile Range
+https://www.youtube.com/watch?v=dNHGVLXBTgI
+
+Normal distribution
+https://www.youtube.com/watch?v=NbWrFFCq2Ks
+
+BERT, ELMO
+http://jalammar.github.io/illustrated-bert/
+
+NB:
+Naive Bayes algorithm is the algorithm that learns the probability of an object with certain features belonging to a particular group/class. In short, it is a probabilistic classifier. You must be wondering why is it called so?
+
+The Naive Bayes algorithm is called “naive” because it makes the assumption that the occurrence of a certain feature is independent of the occurrence of other features.
+
+https://github.com/kojino/120-Data-Science-Interview-Questions
+https://github.com/iamtodor/data-science-interview-questions-and-answers
+https://hookedondata.org/red-flags-in-data-science-interviews/
+
+https://www.youtube.com/watch?v=QCk1iDQlaWA&list=PLVNY1HnUlO27T2H_KspAKembHX_ru0Ha1
+
+one-hot encoding
+https://www.kdnuggets.com/2018/04/implementing-deep-learning-methods-feature-engineering-text-data-cbow.html
+CBOW - Predict target word(center word) using context words. 
+Skip gram model - Predict context words using target(center) word.
+bi-grams
+n-grams
+
+CountVectorizer
+TFIDF
+
+Gensim
+Word2Vec
+https://www.youtube.com/watch?v=64qSgA66P-8
+
+Topic Modelling
+LDA
+
+Unsupervised Learning:
+Clustering:
+K-means
+Hiearchial clustering
+Topic modelling
+
+Latent variables/structures
+Dimensionality reduction
+Topic modelling
+
+Confusion Matrix
+Precision
+Recall
+Sensitivity
+Specifivity
+AUC Curve
+
+Train a NER Tutorial Links:
+============
+https://medium.com/analytics-vidhya/pos-tagging-using-conditional-random-fields-92077e5eaa31 
+https://github.com/yashugupta786/Data_tagger_NER/blob/master/NER_DATA_TAG.py 
+
+https://towardsdatascience.com/named-entity-recognition-and-classification-with-scikit-learn-f05372f07ba2 
+
+1. they fail to generalize to “Out Of Vocabulary” words (OOV) that were not part of the training set. 
+2. The idea behind ELMo and FastText is to exploit the character and morphological structure of the word.
+3. Unlike other models, ELMo and FastText do not take words as one atomic unit, but rather a union of its character combinations e.g. “remaking -> re + make + ing”
+4. polysemy (multiple meanings of the word ) is not taken into account.
+
+ELMO:
+1. Polysemy is taken into account.
+2. Context is considered if a word has multiple meanings.
+3. The model consists of three layers:
+(a) Convolutional Neural Networks (CNN), 
+(b) Bi-directional Long-short term memory (LSTM), and 
+(C) the Embedding.
+4. It produces context-dependent embeddings.
+5. ELMo builds word embedding dynamically by feeding a sequence of characters. It relies on the current surrounding words in the sentence.
+6. Elmo is able to produce high-quality embedding for words that are present and absent in the vocabulary.
+7. ELMo is able to take into account context information when producing word embedding.
+8. It has a superior vector quality compared to other existing models. But since it does prediction at run-time, it has an inference cost.
+
+Machine Intelligence
+Neural Networks
+LSTM
+Neural translation
+RNN
+NLP
+Word Vectors
+data mining
+
+Semantic Search Engine(NER)
+Recommend engine
+Keras, Tensorflow, Scikit-Learn, Gensim, Pandas, NLTK, Numpy
+
+stochastic gradient descent learning ,Random forrest,MNB
+
+Bidirectional LSTM model
+
+SK-Learn classifier (MNB, SVM, SGD as Classifier) and SGD for the optimization
+
+https://igniteoutsourcing.com/fintech/machine-learning-in-finance/
+https://techburst.io/5-use-cases-of-machine-learning-in-the-banking-industry-a4cfbedda722
+
+DOMAINS WHERE MACHINE LEARNING IS APPLICABLE:
+=============================================
+Use cases in Banking:
+1) Sorting emails using NLP.
+2) Predicting Stock Market trends.
+3) Analyze the documentation and extract the important information from it.
+4) Fraud preventions
+Analyzing the billion transactions
+It Learns the characteristics of a Fraud(person) behavior when He shows same behavior during transactions. He is flagged fradud.
+Payment fraud
+Employee fraud - might be voilating policies
+---------
+Algo uses machine learning algorithms to analyze huge volumes of Big Data real-time and alert the financial institutions of alleged fraud cases at once.
+
+The most widespread cases of fraud in the telecom area are illegal access, authorization, theft or fake profiles, cloning, behavioral fraud, etc. Fraud 
+
+Suspicious activity
+
+Customer sentiment analysis
+This analysis allows assessment of the customer positive or negative reaction to the service or product
+Customer sentiments analysis largely relies on text analysis techniques.
+
+Price optimization
+They can then apply ML algorithms to create action plans for each individual, recommending ways that ultimately optimize and increase margins while improving the customer experience. These plans can then be integrated with CRM systems so sales and service staff can offer them to customers when they visit stores or contact calls centers.
+
+Regression Analysis Use cases:
+==============================
+
+Predictive analytics i.e. forecasting future opportunities and risks is the most prominent application of regression analysis in business. 
+
+Demand analysis/forecasting, for instance, predicts the number of items which a consumer will probably purchase.
+independent variable:
+- income(ability to pay)
+- willingness
+
+https://www.youtube.com/watch?v=FATiWmiSfNo
+https://www.youtube.com/watch?v=QlKylTby_xg - Data science projects in insurance industry
+
+However, demand is not the only dependent variable when it comes to business. Regression analysis can go far beyond forecasting impact on direct revenue.
+
+For example, we can forecast the number of shoppers who will pass in front of a particular billboard and use that data to estimate the maximum to bid for an advertisement.
+
+Insurance companies heavily rely on regression analysis to estimate the credit standing of policyholders and a possible number of claims in a given time period.
+
+credit standing = reputation of a person
+LEARNING NEW THINGS - IN BIGGER PICTURE
+=======================================
+Customer Segmentation
+https://www.kaggle.com/mgmarques/customer-segmentation-and-market-basket-analysis
+https://www.youtube.com/results?search_query=customer+segmentation+in+python
+
+Health care:
+https://www.youtube.com/watch?v=LxHHsujnF9c&t=398s
+https://www.healthcatalyst.com/success_stories/predicting-propensity-to-pay-allina-health
+https://www.youtube.com/watch?v=bcp7N9SOsG0
+
+Banking usecases:
+https://www.youtube.com/watch?v=8ijNZEs05dQ
+https://www.youtube.com/watch?v=NgI-TLAQyNw
+
+Ecommerce Personalization: https://www.youtube.com/watch?v=ku6c2jM1pF8
+
+Banking and Finance:
+https://www.youtube.com/watch?v=ndmrhXAlYWg
+Predicting credit risk:
+https://www.kaggle.com/kabure/predicting-credit-risk-model-pipeline
+
+Revenue Forecasting
+
+What are the parameters of RF
+rf_params = {
+    'n_jobs': -1,
+    'n_estimators': 1000,
+#     'warm_start': True, 
+    'max_features': 0.3,
+    'max_depth': 4,
+    'min_samples_leaf': 2,
+    'max_features' : 'sqrt',
+    'random_state' : seed,
+    'verbose': 0
+}
+feature_importances_ = ranks the features
+
+# Gradient Boosting Parameters
+gb_params ={
+    'n_estimators': 1500,
+    'max_features': 0.9,
+    'learning_rate' : 0.25,
+    'max_depth': 4,
+    'min_samples_leaf': 2,
+    'subsample': 1,
+    'max_features' : 'sqrt',
+    'random_state' : seed,
+    'verbose': 0
+}
+How to decide when to use some algorithm.
+Naive Bayes
+High Bias
+High Variance
+Information gain
+Entropy
+Tree pruning
+
+GridSearchCV to find the best parameters for the model.
+The process of hyperparameter tuning (also called hyperparameter optimization) means finding the combination of hyperparameter values for a machine learning model that performs the best - as measured on a validation dataset - for a problem.
+
+In GridSearchCV the best parameters are not evaluated on test/validation set? - is it true?
+
+1. If two columns are copy of each other, correlation is strong.
+2. When two columns are copy of each other - it adds bias to the model.
+3. If we remove one of the two copy columns - it will make the model less biased.
+4. If there are correlated variables, then PCA replaces them with a principle component which can explain max variance.
+
+https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0
+https://github.com/SantiagoEG/FCBF_module
+
+Decision Tree:
+
+Compute entroy E(S) for entire data set.
+Attribues: outlook, temp., humidity, windy
+How to select which of above node as a root node.
+
+Calculate Entropy and Information gain(IG) for each node(attribute)
+Calculate Entropy for each categorical variable of a feature.
+E(Outlook=Sunny) = -2/5 ln(2/5) - 3/5 ln(3/5) = 0.971
+E(outlook=Overcast) = -1 ln(1) - 0 ln(0) = 0
+E(outlook=rainy) = -3/5 ln(3/5) - 2/5 ln(2/5) = 0.971
+
+Information for outlook:
+I(Outlook) = 5/14 * 0.971 + 4/14 * 0 + 5/14 * 0.971 -> Weighted average
+
+IG = E(S) - Sum(Weighted avg * Entropy of each node)
+
+Information gained from outlook:
+Gain(Outlook) = E(S) - I(Outlook)
+ = 0.94 - 0.24
+
+While training a model:
+For train and test, do below:
+- plot for ROC/AUC 
+- draw plots for Variance and Bias(Learning Curve)
+http://scikit-learn.org/stable/auto_examples/model_selection/plot_learning_curve.html#example-model-selection-plot-learning-curve-py
+https://www.dataquest.io/blog/learning-curves-machine-learning/
+
+- draw plots for accuracy vs epochs
+- draw plots for cost vs epochs(learning rate vs cost)
+- draw plots for loss vs epochs(this covers overfitting, underfitting, good fit)
+https://machinelearningmastery.com/display-deep-learning-model-training-history-in-keras/
+https://machinelearningmastery.com/diagnose-overfitting-underfitting-lstm-models/
+
+- apply different validations(k-fold, LOOCV, bootstrapping) and draw plots
+- apply hyperparameter and draw plots for each parameter
+a) Tune model with learning rates and plot
+b) weight decay
+c) tuning mini-batch size
+d) tuning training epochs
+e) tuning different cost functions
+f) tuning different regularization with L1, L2
+g) tuning differnt SGD methods such as (Vanilla SGD, Momentum SGD and Adam) etc.
+h) tuning different activation functions.
+
+- Running multiple models together in loop
+https://www.kaggle.com/quannguyen135/96-acc-model-selection-hyperparameter-tuning
+
+High bias - add more features, increasing training data does nothing
+
+High variance - model perform well with training data but perform poor with test data
+. This is Overfitting.
+Feeding more data will help.
+
+Underfitting: Model doesn't perform well on training data this is because model is unable to capture relationship b/w input example and the target variable. It could be because model is too simple.
+
+Overfitting: Model works well on training data but not on unseen data. Model is too complex.
+Model is memorizing the rel.ship b/w input and target variable. such model predicts target in training dataset very accurately. Increase features to perform well.
+
+
+
+NOTES:
+=====
+
+ROC
+Accuracy
+F1 Score
+
+knn - missing value
+We need more data
+
+Small number of columns, no needs to apply so much techniques
+
+important features - random forest.
+
+VIF - Variance Inference Factor
+
+1-R2
+
+Normalize dataset
+
+Don't do one hot encoding if decisiontree is used.
+
+more cat. variables - use tree based
+
+train and test accuracy- good no overfit.
+
+outlier - quartiles - percentile IQR techniques.
+
+p-value
+
+randomforest - select_feature
+
+RandomForestClassifier is giving best accuracy of all the algorithms so I didn't used OneHot encoding on Categorical features.
+https://www.kaggle.com/kanncaa1/feature-selection-and-data-visualization
+https://www.kaggle.com/sz8416/6-ways-for-feature-selection
+
+Natural Language Understanding(NLU):
+1. Semantic Role Labeling: Built models for named entity recognition, data tagging, extracting time phrases, KPI and Roll up region entities. Taken care of synonyms using the lookup tables.
+2. Sentiment analysis to identify the user’s tone and co-reference resolution to analyze the large data.
+3. And also built word clouds using techniques such as tf-idf and bi-gram, n-grams to analyze text and find out the NPS detractors for customers. Deployment using Apache with wsgi service.
+4. Chatter Bot: Built a chat bot which acts like a virtual customer to train the agents/employees (voice and chat teams) with questions and answers using Classification techniques such as SVM, Random Forest and a mix of keyword matching, Fuzzy string matching & text similarity algorithms
+
+Machine Learning:
+
+Deep Learning:
+
+Image Classification:
+
+anomaly detection algorithms:
+Credit Card Fraud detection:
+https://www.kaggle.com/rgaddati/unsupervised-fraud-detection-isolation-forest
+IsolationForest(Best Algo.)
+https://blog.easysol.net/using-isolation-forests-anamoly-detection/
+https://towardsdatascience.com/outlier-detection-with-isolation-forest-3d190448d45e
+One Support Vector Machine
+K-means
+Time Series:
+VVVV Imp. example use case of Network related
+https://stats.stackexchange.com/questions/152644/what-algorithm-should-i-use-to-detect-anomalies-on-time-series
+https://blog.twitter.com/engineering/en_us/a/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series.html
+
+NOTES:
+======
+
+https://github.com/JifuZhao/120-DS-Interview-Questions/blob/master/predictive-modeling.md
+https://github.com/JifuZhao/120-DS-Interview-Questions/blob/master/data-analysis.md#14-you-run-your-regression-on-different-subsets-of-your-data-andfind-that-in-each-subset-the-beta-value-for-a-certain-variable-varies-wildly-what-could-be-the-issue-here
+https://github.com/ShuaiW/data-science-question-answer#linear-regression
+https://www.analyticsvidhya.com/blog/2017/07/30-questions-test-data-scientist-natural-language-processing-solution-skilltest-nlp/
+
+NLP Imp - Must Must read:
+https://resources.workable.com/natural-language-processing-engineer-interview-questions
+https://web.stanford.edu/~jurafsky/NLPCourseraSlides.html & https://www.youtube.com/playlist?list=PLoROMvodv4rOFZnDyrlW3-nI7tMLtmiJZ&disable_polymer=true
+https://blog.insightdatascience.com/how-to-solve-90-of-nlp-problems-a-step-by-step-guide-fda605278e4e
+https://github.com/WeiFoo/NoML
+
+
+NOTES - LEARNINGS:
+==================
+
+
+models = []
+ models.append(( LR , LogisticRegression()))
+ 
+ models.append(( LDA , LinearDiscriminantAnalysis()))
+ 
+ models.append(( KNN , KNeighborsClassifier()))
+ 
+ models.append(( CART , DecisionTreeClassifier()))
+ 
+ models.append(( NB , GaussianNB()))
+ 
+ models.append(( SVM , SVC()))
+# evaluate each model in turn
+ results = []
+ 
+ names = []
+ scoring = accuracy
+ for name, model in models: 
+    kfold = KFold(n_splits=10, random_state=7)
+    cv_results = cross_val_score(model, X, Y, cv=kfold,        scoring=scoring)
+    results.append(cv_results)
+    names.append(name)
+    msg = "%s: %f (%f)" % (name, cv_results.mean(), cv_results.std())
+    print(msg)
+
+
+
+Linear Regression:
+1. It works well if there are thousands of features.
+2. It doesn't suffer from overfitting. It has Lasso and Ridge regression.
+3. It doesn't take much computation power.
+
+Logistic Regression:
+1. When features are linear and sigmoid adds non linearity to them.
+2. 
+
+NB:
+1. Text classification.
+2. Avoids overfitting.
+3. Large dataset.
+4. Features should be independent of each other.
+5. Cannot represent complex behavior so cannot overfit
+
+
+SVM:
+1. Text classification
+2. When data is linear. classes are linearly separable by a straight line.
+3. When there large set of features.
+4. Pattern recognition.
+5. Data is high dimensional.
+6. Memory Intensive.
+
+RF:
+1. For accurcay and fast training.
+2. Less sensitive to outliers.
+3. Computationally not efficient. takes more memory.
+4. Large dataset, Higher dimensionality
+
+
+K-means:
+1. You should know the number of cluster to find.
+
+PCA:
+Sometimes you have a wide range of features, probably highly correlated between each other, and models can easily overfit on a huge amount of data. Then, you can apply PCA.
+https://blog.statsbot.co/machine-learning-algorithms-183cc73197c
+https://hackernoon.com/choosing-the-right-machine-learning-algorithm-68126944ce1f
+
+
+
+https://www.xenonstack.com/blog/real-time-anomaly-detection/
+https://mubaris.com/posts/kmeans-clustering/
+https://www.kaggle.com/c/jigsaw-unintended-bias-in-toxicity-classification/discussion/91432#latest-533926
+
+
+Analomy detection: Patterns are observed for disk usage, memory usage, database size growth, network usage and so on. It tracks these features over a period of time and if there are changes or a shift/fluctuations in standard deviation values, means there is something wrong and an immediate action is required. This notification is sent as an alert to the administrator.
+
+Feature Selection or Feature Transformation uses PCA, LDA, etc. to primarily capture the correlation, variance between attributes.
+the attributes with low variance cannot be helpful in distinguishing the different classes since it is more likely that the different classes will have common attribute values. Whereas if an attribute has large variance, it is more likely that the larger range of values will capture the variability of the classes better and therefore are a better representation for the class. Hence,  attributes with a variance below a threshold can be discarded.
+
+Information gain:
+This notion is represented by the probability of an attribute value occurring together with its class label, over the entire range of the attribute values given in your data. This is what the entropy measure for that attribute captures. The more the entropy, the more is the variability, more is the information received.
+
+
+Best will give lower classification error.
+
+decision tree identifies the most significant variable and it's value that gives best homogeneous sets of population
+
+For Categorical:
+----------------
+1. Gini Score: Calculate gini score of each node. The node with higher gini score is used as a split.
+
+2. Information gain:
+Now, we can build a conclusion that less impure node requires less information to describe it. And, more impure node requires more information. Information theory is a measure to define this degree of disorganization in a system known as Entropy. If the sample is completely homogeneous, then the entropy is zero.
+OR
+Information gain is a statistical property that measures how well a given attribute separates the training examples according to their target classification. 
+Whereas, an attribute with high information gain splits the data into groups with an uneven number of positives and negatives and as a result helps in separating the two from each other.
+
+To define information gain precisely, we need to define a measure commonly used in information theory called entropy that measures the level of impurity in a group of examples.
+
+Entropy = −plog2p−qlog2q
+
+Here p and q is probability of success and failure respectively in that node. Entropy is also used with categorical target variable. It chooses the split which has lowest entropy compared to parent node and other splits. The lesser the entropy, the better it is.
+
+Information gain = 1- Entropy
+
+Node = A category
+
+Choose Split node = Less Entropy --> Sample Homogenous --> needs less information --> less impure node
+A category/node with less entropy means requires less information i.e. More homogeneous and selected for split.
+
+For Regression:
+---------------
+1. Variance: The split with lower variance is selected as the criteria to split the population.
+
+Validating Model in Real business use case
+https://www.protiviti.com/sites/default/files/united_states/insights/validating-machine-learning-models-whitepaper-protiviti.pdf
+https://www.analyticsindiamag.com/8-ways-to-spot-a-fake-data-scientist/
+
+Demistifying RASA NLU
+https://hackernoon.com/entity-extraction-demistifying-rasanlu-part-3-13a460451573
+
+A linear regression model which has a dependent variable Y and set of independent variables X {x1, x2, x3,....,xn}
+It is a statistical tool used to predict future/target variables given independent variables.
+Equation of regression is given by:
+y = b0 + b1x1 + b2x2 + b3x3 .... bnxn
+y = BX + e
+
+
+Assumptions:
+1. Relationship between Independent variables and dependent to be linear.
+2. All variables should be multivariate normal, basically to check goodness of fit of model.
+3. No or little multi collinearity among independent variables.
+4. No auto correlation
+5. Homoscedasticity: it checks for the residual across the regression line.
+
+Limitations:
+1. Sensitive to Outliers.
+2. Easy to overfit.
+3. If there is no linear relship. between independent variable, model will be bad.
+
+https://www.statisticssolutions.com/assumptions-of-linear-regression/#targetText=Assumptions%20of%20Linear%20Regression,Linear%20relationship
+https://www.quora.com/What-are-the-limitations-of-linear-regression-modeling-in-data-analysis
+
+
+Modelling the probability of default.
+
+1. I would use Logistic Regression which calculates the probability of an event occuring depending on the values of independent variables.
+
+Other models:
+Logit models
+Neural Networks
+Random Forest
+XGBoost
+
+Credit Risk references:
+https://www.kaggle.com/ionaskel/credit-risk-modelling-eda-classification/code
+https://medium.com/henry-jia/bank-loan-default-prediction-with-machine-learning-e9336d19dffa
+https://www.moodysanalytics.com/risk-perspectives-magazine/managing-disruption/spotlight/machine-learning-challenges-lessons-and-opportunities-in-credit-risk-modeling
+https://www.analyticsvidhya.com/blog/2015/11/beginners-guide-on-logistic-regression-in-r/#targetText=Since%20probability%20must%20always%20be,equation%20will%20never%20be%20negative.&targetText=On%20dividing%2C%20(d)%20%2F,(e)%2C%20we%20get%2C&targetText=This%20is%20the%20equation%20used%20in%20Logistic%20Regression.
+http://faculty.cas.usf.edu/mbrannick/regression/Logistic.html
+https://financetrain.com/modelling-probability-default-using-logistic-regression/
+https://www.rug.nl/staff/j.o.mierau/medema.pdf
+https://pdfs.semanticscholar.org/6a7f/1c253bb3258b2d4d4d70c4a83622d356666f.pdf
+
+Model Validation:
+Basel II requires banks to model the risk associated with their portfolios. Basel II requires the validation of this process.
+“Banks must have a robust system in place to validate the accuracy and consistency of rating systems, processes, and estimation of all relevant risk components.
+
+
+Validating a PD model means to verify to what extent the model meets the minimum requirements of Basel II. In order to do this, we distinguish three forms of validation: 
+1. theoretical validity: Theoretical validation requires the review of the theories and assumptions underlying the proposed model. Theories associated with PD models can be thought of as economic theories about the important risk drivers of default occurrence. If an important
+risk driver is missing the bank has to be conservative with the final estimates.
+2. data validity: To validate the data used to develop the model we distinguish three parts of data validation:
+ a) representative data: Use of internal and external data(as per Base 2) which represents underlying population.
+ b) appropriateness of the variables: Variables can be borrower characteristics(age, income, occupation etc), Transaction risk characteristics(mortgage type, loan to value, payment history etc)
+ c) completeness of the data set: Basel II requires the length of the underlying historical observation period
+to be at least five years. data of less than 5 yrs, data is insufficient and banks are allowed to use external data.
+3. statistical validity: Basel II requires banks to validate the accuracy of the model. 
+Models are validated by determining the discrimination and calibration of the model. A model’s discrimination is the ability to separate between defaulters and nondefaulters. Calibration is the ability of the model to make unbiased estimates of the outcome. We say that a model is well calibrated when a fraction of p of the events we predict, with a probability p actually occur. Discrimination and calibration both compare the estimated probabilities with the observed frequency of default in the data set. So by measuring discrimination and calibration the PDs are validated. However, validation can be more rigorous since the parameters of the model (βˆ) can also be validated. We
+validate the parameters by means of reproducibility of research, stability of parameters and choice of functional form. Besides we describe out-of-sample performance and bootstrap to validate the PDs as well as the parameteres.
+
+statistical validation:
+1. reproducibility of research: Reuse of existing methods and used to validate the current scenario.
+2. stability of parameters: stability over time(if models is stable over the time) and stability over groups.
+3. choice of functional form: Which function to use. example logit function
+4. discrimination: ability of model to discriminate between default and non default
+5. calibration: Calibration is the ability of the model to make unbiased estimates of the default probabilities
+6. out-of-sample performance
+7. bootstrap
+
+Reference: https://www.rug.nl/staff/j.o.mierau/medema.pdf
+
+LGD, PD and EAD
+https://www.investopedia.com/terms/e/exposure_at_default.asp
+
+If a lily pad doubles in size every minute and after 60 mins it covers the whole pond at what time does it cover 1/4 the pond  
+
+like you have one 5-litter bottle and one 3-litter bottle, how to get 4 litter water.
+If you had a Rubik's cube with 10 little squares on each side, and peeled off the outer layer, how many little cubes would you end up with?
+
+questions:
+derivatives, risk management techniques, statistics
+
+we should check if the model is able to correctly classify the weird data-point.
+The illusion, that gets created by the classification accuracy score in situations described above, is also known as classification paradox.
+
+OneClassSVM is trained on “healthy” data, in our case the normal transactions, and learns how that pattern is. When introduced to data that has an abnormal pattern compared to what it has been trained on, it is classified as an outlier.
+
+We train our normal transactions on the algorithm, and thereby creates a model that contains a representational model of this data. When introduced to observations that are too different, they are labeled as out-of-class.
+The One Class SVM algorithm returns values that are either positive values (for inliners) or negative values (for outliers). The more negative the value is, the longer the distance from the separating hyperplane.
+
+https://neurospace.io/blog/2019/03/predicting-credit-card-fraud-with-unsupervised-learning/
+https://blog.floydhub.com/introduction-to-anomaly-detection-in-python/
+
+
+Measuring credit risk well is the most effective way of ensuring that credit losses would be minimized. Building and implementing the best possible credit risk models would result in the most precise prediction about expected loss. The lender can also require collaterals. Thus, if a borrower does not repay, the asset that serves as a collateral can be acquired by the lender and sold to a third party in order to cover some of the losses in case the borrower defaults. Third, the lender can make sure that the greater loss they expect, the higher the price of lending that they charge.
+
+To display all columns in pandas jupyter notebook
+pd.options.display.max_columns = None
+pd.options.display.max_rows = None
+
+Very Important Article on Credit Scording techniques
+Fine classing, Coarse classing, WOE etc.
+---------------
+https://dzone.com/articles/credit-scoring-analytics-and-scorecard-development
+-----------------
+
+https://www.kaggle.com/janiobachmann/lending-club-risk-analysis-and-metrics
+https://www.udemy.com/course/credit-risk-modeling-in-python/learn/lecture/15663812#questions
+
+https://www.kaggle.com/deepanshu08/prediction-of-lendingclub-loan-defaulters
+https://www.kaggle.com/pragyanbo/a-hitchhiker-s-guide-to-lending-club-loan-data
+https://www.kaggle.com/jlrsource/predicting-loan-status-with-python
+https://www.kaggle.com/pavlofesenko/minimizing-risks-for-loan-investments
+https://www.kaggle.com/wendykan/lending-club-loan-data/kernels
+
+test2342@yopmail.com
+lendingclub@123
+---------------------------------------
+Null Hypothesis
+---------------------------------------
+Suppose we have two features A and B, there is a linear
+relationship between A & B
+
+Null Hypothesis: says there is no relationship between features
+A & B
+
+To Reject Null Hypothesis we need evidence indicating there is some
+kind of relationship between A & B.
+
+Otherwise Null Hypothesis is assumed to be true.
+----------------------------------------
+CCP:
+demographic(6):
+------------
+gender
+income
+married
+kids
+home: own or rent
+house size: size in sq. ft.
+
+Other(8):
+------------
+autopay enrolled: has customer enrolled in autopay?
+devices used:     such as Modem, DVR etc.
+connection type:  new or ugrade
+division:
+week_active:      number of weeks customer was active before churn happened
+tenure:           months since customer joined
+promo rolloff:    has customer used promo code before he churns
+trouble tickets:  tickets he created before churn
+
+https://dzone.com/articles/credit-scoring-analytics-and-scorecard-development
+https://www.listendata.com/2015/03/weight-of-evidence-woe-and-information.html#Steps-of-Calculating-WOE
+https://www.kaggle.com/pavansanagapati/weight-of-evidence-woe-information-value-iv/notebook
+http://lmtest.india.eclerx.com/lmAPItest/swagger/ui/index#/RequestDetails/RequestDetails_AllocateLockerToUser
+
+how do you know if model has certain bias?
+Bias Variance Trade off
+Bias - Build more complex model
+Variance - Add more training data
+Cross Validation: Train, Test and Validation
+K-Fold Cross Validation
+L1 and L2 regularization
+MultiCollinearity
+https://hackernoon.com/tackle-bias-and-other-problems-solutions-in-machine-learning-models-f4274c5fe538
+
+
+Understanding Accuracy, Precision and Recall
+https://www.youtube.com/watch?v=xuY3bTvdxf0
+
+Bagging & Boosting
+https://medium.com/@rrfd/boosting-bagging-and-stacking-ensemble-methods-with-sklearn-and-mlens-a455c0c982de
+
+Fine classing
+Weight of evidence
+Coarse classing
+Information value
+Creating dummies
+creating dummies of continous variable - why to convert continous to dummies?
+building log reg with p-values
+Out of sample validation
+Model evaluation - ROC curve
+Creating PD
+Calculate Scorecard
+Credit Scorecard to PD
+Setting cuttoffs
+LGD and EAD models
+
+Bundle up many dummy categorical variables.
+Create categories from variables like income by dividing them into the ranges such as
+salary from 0$-10K$ in 1 category
+salary from 10K$-40K$ in 2nd category and so on.
+
+Fine classing: Bundling up the categories depending on their properties.
+Eg: Debt-to-income ratio: Range is 0 to 100. We can split it into 50 categories with 2% to each from 0-2, 2-4 so on.
+With Fine classig both discrete and continous variables can be represented with categories.
+
+We have to find out the ability of each categorical variable to predict the dependent variable using Weight of Evidence(WOE).
+Weight of Evidence: To what extent an independent variable would predict a dependent variable. In other words, To what extent each of different categories of independent variable explains the dependent one.
+WOE = log(proportions of y = 1/proportions of y = 0)
+In simple words, proportion of observations of first type(y=1, good) of outcome of dependent variable falls into the respective category(A,B,C) of the independent variable to the proportion of observations of second type(y=0, bad) of outcome of dependent variable falls into the respective category(A,B,C) of the independent variable.
+
+Coarse Classing: The process of constructing new categories based on the initial ones.
+Pick variables with categories 5, 6 or even 50 or more categories.
+Based on WOE, we will combine them into bigger categories.
+Bundle categories with similar WOE. This way we lower the number of categories and improve our PD model.
+
+We have a variable with K categories, Find WOE for each category, 
+Information Value or Weightage of each category(i=1 to K) =(%good - %bad). log(%good/%bad)
+then simply sum them to reach a weighted avg. of the weights of evidence of the K categories.
+It is information value of the independent variable w.r.t the dependent variable.
+It is how much information the original independent variable brings wrt. explaining the dependent variable. It helps to find independent variables which explains the dependent variables best.
+If we have 100 predictors, Information values can help us to find best 5, 10 or 20 independent variables to include them in a statistical model. It is always between 0-1, greater values means original variable yields more information.
+IV < 0.02 = No Predictive power.
+0.02 < IV < 0.1 = Weak Predictive power
+0.1 < IV < 0.3 = Medium Predictive power
+0.3 < IV < 0.5 = Strong predictive power
+0.5 < IV	   = Too strong predictive power
+
+Independent Variable: employment_length(0,1,2,3,4,5,6,7,8,9,10)
+Bundling the categories of an independent variables with similar WOE into one by drawing and examining the plot.
+If WOE hardly changes, then bundle and create a new category combining all with similar WOE.
+emp_length:0 - 0
+emp_length:1 - 1
+emp_length:2-4 - 2,3,4
+emp_length:5-6 - 5,6
+emp_length:7-9 - 7,8,9
+emp_length:10 - 10 or above
+10 categories bundled into 6. It is called Coarse classing.
+
+outcome is defined by the logistic function: P(X) = e(x)/1 - e(x)
+annual income lower -> higher PD
+annual income higher > lower PD
+
+P(Y=1)   B0+B1X1+B2X2+...+BXn
+----- = e 
+P(Y=0)
+
+Above equation is called Odds.
+
+Interpreting the coefficient of a dummy variable:
+odds(non-default|Higher education)
+------------------------------------ = 1.27
+odds(non-default|NO Higher education)
+
+It means, odds(non-default|Higher education) = 1.27 times odds(non-default|NO Higher education)
+Borrower with higher education has odds of being good is 1.27 times higher than borrower with lower education.
+
+Variables taken for training:
+-----------------------------
+annual_income, dti, month_since_last_delinq, month_since_last_record, total_rev_high_limit, grade, home_ownership, addr_state, term, emp_len,
+int_rate, purpose, 
+
+Fitting the model with selected independent variables.
+find intercept: reg.intercept_
+find coefficient: reg.coef_
+
+Interpreting the coefficients:
+-----------------------------
+Higher coefficient means greater odds for being a good borrower.
+Lower coefficient has odds for default.
+
+odds(Y=1|grade=B) = 2.42 . odds(Y=1|grade=G)
+means odds for grade B is 2.42 times better than odds for grade with G.
+
+Evaluate model performance:
+Find cutoff for the model
+
+Set different thresholds and then check the confusion matrix to see if our model serves the purpose of finding more defaults.
+
+Predicted 0    1
+Actual
+------------------
+		0 6  10184
+		1 5  83062
+		
+Here 0 - defaults(bad), 1 - non-defaults(good)
+Only 6 defaults are predicted correctly, 10184 are predicted as good. that is False Positives(FP)
+
+If this model is used for granting the loan, a lot of bad applicants would get loans.
+To fix this we change threshold.
+for threshold = 0.9
+model improved for predicting defaults but gets bad for predicting good borrowers.
+In this case, we are able to reduce the defaults dramatically but also the number of overall approved applicants.
+0.9 may be too conservative and may lead to lose business.
+
+When we do credit risk modelling, we want to minimize the risk, we still want to give out loans because that's how we make money.
+We need to check the rate of False positive predictions vs the rate of True Positive predictions for all possible thresholds. The curve which is used to represent this is called ROC(Receiver Operating Characteristic Curve).
+If TPR is better than dotted curve in ROC, it means model is predicting better than baseline(benchmark).
+AUC: It is a good measure of how good a classification model is.
+AUC for predicting by chance(basline) is 50%. so we can calculate AUC for models as well.
+We got AUC score: 70.2%. Is it good? it mostly depends on our data. Even if a model is built in an excellent way may not be very accurate just because the data provided is not good enough.
+AUC metrics:
+BAD: 50% - 60%
+POOR: 60% - 70%
+FAIR: 70% - 80%
+GOOD: 80% - 90%
+EXCELLENT: 90% - 100%
+
+So, our model is FAIR.
+
+Calculating PD for single customer:
+given all independent variables from home type to purpose of loans, multiply the variable values with their coeffs. and add
+log(1-PD/PD) = 2.50279, now get rid of log
+1-PD/PD = e(2.50) = 12.216
+1-PD = 12.216 / (12.216 + 1) = 12.216 / 13.216 = 0.924
+So, probability of this person not default is 92%.
+
+
+SCORECARD:
+---------
+To calculate the PD, bank use scorecards, which is standardized no matter the type of model is. This makes much more interpretable to non-technical people and allow us to compare different PD model.
+
+PD model to Scorecard.
+1. Turn regression coefficient from our PD model into scores.
+2. Decide what score card we want to create. let say min score: 300 and max. score: 850
+3. Get the sum of minimum for each independent variable(-1.49)
+4. Get the sum of maximum for each independent variable(5.6332)
+5. Rescale coefficients to Scores.
+Variable Score = variable coeff . (max_score-min_score)
+								  ---------------------
+							   (max_sum_coeff-min_sum_coef)
+Here max_score = 850, min_score = 300
+max_sum_coeff = 5.632, min_sum_coef = -1.49
+variable coeff = df_scorecard['Coefficient']
+
+Calculate Intercept score:
+ = (intercept_coeff - min_score)(max_score-min_score) + min_score
+   -----------------------------
+   (max_sum_coeff-min_sum_coef)
+ = 311.87 looks more like what we expected.
+Now round off the scores, to integer using round method.
+
+Using ScoreCard:
+Calculate credit score
+Y = intercept + B1X1 + B2X2 + .... + BNXN
+y = 300 + 34 + 21+ 45
+Y = 400 - is credit score
+
+Cut-off rate: used for taking a decision whether to approave a loan application or not.
+We have to set lower cutoff rate for credit score to grant more loans(lower quality borrower) - business matters.
+It is decied by bank.
+
+Using ROC threshold we can get Number of applicant approved or rejected, approval rate and rejection rate
+Let's assume highest level of probability we would accept is 10% - 53% approval, 46% rejection.
+for 5% = 20% approval rate, 79% rejection rate.
+Or we can use credit score for cut-off instead of ROC curve threshold.
+
+LGD model:
+Target variable: recovery_rate_0_1
+Same independent variables are used and Logistic Regression model is fit.
+Our aim is to know whether recovery is possible or not.
+ROC curve is used to determine the accuracy at certain cut-off point.
+Two stage model:
+1. Use Logistic Regression to classify recoverable or not recoverable.
+2. Use Linear Regression to predict the recovery rates of recoverables.
+Evaluation:
+- apply correlation between actual value and predicted value. Correlation must not be too high. its 0.30 (between weak to moderate)
+- See the difference between actual and predicted values called residuals. If everything is ok, this distribution will be close to the normal distribution and have mean of 0.
+
+EAD:
+target_variable: credit converstion factor
+If customer defaults, higher credit conversion factor(CCF) indicate that the amout of exposure at the moment borrower defaults would be higher.
+Positive Coefficient = increase in CCF
+Negative Coefficient = decrease in CCF
+CCF as probability of off balance sheet(guarantees like properties, home) exposure converting into loan exposure
+Like variable loan type: eductional(9.6), credit card(6.8), Here CCF is higher, therefore best borrowers are those who invests in education.
+Interest rate: -1.7, With each percentage increase of interest rate, the expected CCF would be 1.7 lower
+delinq_last_6mon: 1.13, CCF is higher with number of inquiries
+Linear Regression is fit with data, evaluated using Correlation between target variable and predicted variable(y_hat) is 0.54, so model is moderately stronger positive correlation which is good for EAD model.
+Look at the residuals for predicted and target variable. if distribution is normal, model is good and mean is 0.
+
+Expected Loss(EL) for a given customer:
+Banks care about losses for all customer not for single customer.
+prepare three columns with values:
+PD: We have probabilities of being default like 0.56, 0.78
+LGD: Combine stage 1 and stage 2 models and subtract from 1
+EAD(CCF or proportion of the original amout of loan is still outstanding when borrower defaulted): Convert values < 0 to 0 and 1 if greater than 1.
+EAD = CCF * funded amount (product of CCF and funded amount) 
+
+Now do dot product of three columns
+EL = PD * LGD * EAD
+
+To calculate total expected loss, sum the EL column.
+%age of total loss = sum of EL/sum of funded amount = 0.076
+
+Expected loss(7%) on its loan portfolio should be less than its capital(10%)
+
